@@ -263,6 +263,7 @@ body {
 .card_icon {
   font-size: 6rem;
   background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(161, 79, 3, 0.7) 99.94%);
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   display: inline-block;
@@ -445,6 +446,55 @@ body {
   z-index: -1;
 }
 
+.booking {
+  height: 50rem;
+  background: linear-gradient(125deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 56%, rgba(186, 133, 84, 0.800157563) 57%, rgba(161, 79, 3, 0.8) 100%), url(../img/photo-booking.png) center/cover no-repeat;
+  box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.form {
+  width: 60%;
+  padding-top: 5rem;
+  padding-left: 5rem;
+}
+.form__group:not(:last-child) {
+  margin-bottom: 5rem;
+}
+.form__input {
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  font-weight: 400;
+  color: #000000;
+  padding: 2rem 0rem 2rem 2rem;
+  border: none;
+  border-bottom: 0.3rem solid transparent;
+  border-radius: 0.3rem;
+  width: 55%;
+}
+.form__input:focus {
+  outline: none;
+  border-bottom: 0.3rem solid #66d663;
+  box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.5);
+}
+.form__input:focus:invalid {
+  border-bottom: 0.3rem solid #cc2a2a;
+}
+.form__label {
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  font-weight: 400;
+  display: block;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  transition: 0.7s all;
+}
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: none;
+}
+
 .row {
   max-width: 114rem;
   margin: 0 auto;
@@ -533,4 +583,9 @@ body {
   padding-top: 8rem;
   padding-bottom: 8rem;
   position: relative;
+}
+
+.section-booking {
+  padding: 10rem;
+  background: linear-gradient(90deg, rgba(186, 133, 84, 0.7), rgba(0, 0, 0, 0.7));
 }/*# sourceMappingURL=style.css.map */
