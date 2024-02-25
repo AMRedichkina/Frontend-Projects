@@ -154,7 +154,7 @@ body {
   margin-bottom: 21.6rem;
 }
 
-.btn:link, .btn:visited {
+.btn, .btn:link, .btn:visited {
   display: inline-block;
   text-transform: uppercase;
   text-decoration: none;
@@ -166,6 +166,7 @@ body {
   transition: all 0.2s;
   font-size: 2rem;
   box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.5);
+  border: none;
 }
 .btn:hover {
   transform: translateY(-0.3rem);
@@ -173,7 +174,7 @@ body {
 }
 .btn:hover::after {
   opacity: 0;
-  transform: scale(2);
+  transform: scale(150%);
 }
 .btn:active {
   transform: translateY(0.3rem);
@@ -195,6 +196,13 @@ body {
 .btn_animated {
   animation: btnToUp 2s ease-in 0.3s;
   animation-fill-mode: backwards;
+}
+.btn_brown, .btn_brown:link, .btn_brown:visited {
+  background: #a14f03;
+  color: #ffffff;
+}
+.btn_brown::after {
+  background: #a14f03;
 }
 
 .btn-text:link, .btn-text:visited {
@@ -455,12 +463,15 @@ body {
 }
 
 .form {
-  width: 60%;
+  width: 75%;
   padding-top: 5rem;
   padding-left: 5rem;
 }
 .form__group:not(:last-child) {
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
+}
+.form__group:nth-child(4) {
+  margin-bottom: 4rem;
 }
 .form__input {
   font-size: 1.6rem;
@@ -493,6 +504,45 @@ body {
 .form__input:placeholder-shown + .form__label {
   opacity: 0;
   visibility: none;
+}
+.form__group-radio {
+  width: 40%;
+  display: inline-block;
+}
+.form__input-radio {
+  display: none;
+}
+.form__label-radio {
+  cursor: pointer;
+  position: relative;
+  padding-left: 4rem;
+}
+.form__button-radio {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  border: 0.5rem solid #a14f03;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -0.6rem;
+}
+.form__button-radio::after {
+  content: "";
+  display: block;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  background: #a14f03;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.4s all;
+}
+.form__input-radio:checked ~ .form__label-radio .form__button-radio::after {
+  opacity: 1;
 }
 
 .row {
@@ -559,6 +609,33 @@ body {
   transform: translate(-50%, -50%);
   width: 100%;
   text-align: center;
+}
+
+.footer {
+  padding: 5rem;
+  background-color: rgb(51, 51, 51);
+  position: relative;
+}
+.footer__logo {
+  width: 8rem;
+}
+.footer__menu {
+  list-style: none;
+  text-align: center;
+}
+.footer__item {
+  display: inline-block;
+}
+.footer__item:not(:last-child) {
+  margin-right: 5rem;
+}
+.footer__link:link, .footer__link:visited {
+  color: #F7F7F7;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  font-weight: 300;
 }
 
 .section-about {
