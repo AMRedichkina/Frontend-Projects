@@ -21,6 +21,8 @@ body
         animation-timing-function: ease-in
         backface-visibility: hidden
         animation-fill-mode: backwards
+        @include respond(tab-port)
+            font-size: 4rem
 
     &__second
         display: block
@@ -35,6 +37,9 @@ body
         animation-delay: .3s
         backface-visibility: hidden
         animation-fill-mode: backwards
+        @include respond(tab-port)
+            font-size: 3rem
+            letter-spacing: .2rem
 
 .title-second
     display: inline-block
@@ -48,6 +53,10 @@ body
     background: linear-gradient(90deg, rgba($color-brown-light, 0.7) 0.03%, rgba($color-brown-dark, 0.7) 99.94%)
     -webkit-background-clip: text // prefix!
     color: transparent // don't use opacity here
+    @include respond(tab-land)
+        font-size: 3rem
+    @include respond(tab-port)
+        letter-spacing: .7rem
     &_white
         color: $color-white
     &:hover
@@ -60,8 +69,12 @@ body
     letter-spacing: .2rem
     text-transform: uppercase
     font-weight: 700
+    @include respond(tab-land)
+        font-size: 1.8rem
 
 .paragraph
     font-size: $font-size-paragraph
     letter-spacing: .2rem
     font-weight: 400
+    @include respond(tab-land)
+        font-size: 1.5rem

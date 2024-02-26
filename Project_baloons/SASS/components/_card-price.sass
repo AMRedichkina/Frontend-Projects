@@ -3,6 +3,8 @@
     perspective: 150rem //how far we are from the card
     -moz-perspective: 150rem
     position: relative
+    @include respond(tab-port)
+        height: auto
     &__side
         height: 50rem
         color: white
@@ -15,17 +17,34 @@
         backface-visibility: hidden
         border-radius: .5rem
         overflow: hidden
+        @include respond(tab-port)
+            height: auto
+            position: relative
         &_front
             background: $color-white
+            @include respond(tab-port)
+                padding-bottom: 10rem
+                
         &_back
             background: green
             transform: rotateY(180deg)
             background: linear-gradient(120deg, $color-brown-light, $color-brown-dark)
-        
+            @include respond(tab-port)
+                transform: rotateY(0)
+                padding: 5rem
+                padding-top: 12rem
+                margin-top: -10rem
+                box-shadow: $box-shadow
+                border-top-left-radius: 0
+                border-top-right-radius: 0
+                clip-path:  polygon(0 0, 100% 20%, 100% 100%, 0 100%)
     &:hover &__side_front
         transform: rotateY(-180deg)
+        @include respond(tab-port)
+                transform: rotateY(0)
+
     &:hover &__side_back
-        transform: rotateY(0deg)
+        transform: rotateY(0)
     
     &__img
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%)
@@ -37,6 +56,9 @@
             background: $color-brown-light url(../img/photo-card-price-1.png) center / cover no-repeat
         &_3
             background: $color-brown-light url(../img/photo-card-price-2.png) center / cover no-repeat
+        @include respond(tab-port)
+            height: 23rem
+
     &__title
         font-size: 2.8rem
         letter-spacing: .2rem
@@ -46,6 +68,8 @@
         position: absolute
         top: 17rem
         right: 0
+        @include respond(tab-port)
+            top: 20rem
 
     &__span
         background: linear-gradient(90deg, $color-brown-light, $color-brown-dark)
@@ -65,6 +89,8 @@
             margin: 0 auto
             width: 70%
             text-align: center
+            @include respond(tab-port)
+                width: 50%
             li
                 font-size: $font-size-paragraph
                 letter-spacing: .2rem
@@ -78,12 +104,20 @@
         top: 50%
         left: 50%
         transform: translate(-50%,-50%)
+        @include respond(tab-port)
+            position: relative
+            top: 0
+            left: 0
+            transform: translate(0)
+            text-align: center
     &__text
         margin-bottom: 8rem
         letter-spacing: .2rem
         text-transform: uppercase
         text-align: center
         color: $color-white
+        @include respond(tab-port)
+            margin-bottom: 2rem
         &_1
             font-size: 2rem
             font-weight: 300

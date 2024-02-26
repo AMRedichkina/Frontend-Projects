@@ -10,3 +10,30 @@
         content: ""  // Adds pseudo-element to enable the clearfix
         display: table  // Makes the container behave like a table to fully encompass floated elements
         clear: both  //Prevents the container from being adjacent to floated elements on both sides
+
+/* -phone
+    -tab-port
+    -tab-land
+    -big-screen
+    */
+
+@mixin phone
+    @media (max-width: 600px)
+        @content
+
+@mixin respond($breakpoint)
+    @if $breakpoint == phone
+        @media (max-width: 600px)
+            @content
+
+    @if $breakpoint == tab-port
+        @media (max-width: 900px)
+            @content
+
+    @if $breakpoint == tab-land
+        @media (max-width: 1240px)
+            @content
+    
+    @if $breakpoint == big-screen
+        @media (min-width: 1800px)
+            @content

@@ -1,6 +1,8 @@
 .section-about
     padding-top: 8rem
-    margin-bottom: 8rem
+    margin-bottom: 10rem
+    @include respond(tab-port)
+        margin-bottom: 40rem
 
 .section-advantages
     padding-top: 20%
@@ -8,6 +10,15 @@
     height: 95vh
     background: linear-gradient(90deg, rgba($color-brown-light, 0.7) 0.03%, rgba($color-black, 0.7) 99.94%), url(../img/background-main-1.png) center / cover no-repeat
     clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%)
+    @include respond(tab-land)
+        height: 120vh
+    @include respond(tab-port)
+        height: 175vh
+    @include respond(tab-port)
+        clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%)
+    @include respond(phone)
+        clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%)
+        height: 105vh
 
 .section-price
     padding-top: 8rem
@@ -21,3 +32,5 @@
 .section-booking
     padding: 10rem
     background: linear-gradient(90deg, rgba($color-brown-light, 0.7), rgba($color-black, 0.7))
+    @include respond(tab-port)
+        padding: 4rem
