@@ -12,22 +12,22 @@
 html {
   font-size: 62.5%;
 }
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   html {
     font-size: 56.25%;
   }
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   html {
     font-size: 50%;
   }
 }
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   html {
     font-size: 30%;
   }
 }
-@media (min-width: 1800px) {
+@media only screen and (min-width: 1800px) {
   html {
     font-size: 75%;
   }
@@ -107,7 +107,7 @@ body {
   backface-visibility: hidden;
   animation-fill-mode: backwards;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .title-first__first {
     font-size: 4rem;
   }
@@ -126,7 +126,7 @@ body {
   backface-visibility: hidden;
   animation-fill-mode: backwards;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .title-first__second {
     font-size: 3rem;
     letter-spacing: 0.2rem;
@@ -145,12 +145,12 @@ body {
   -webkit-background-clip: text;
   color: transparent;
 }
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .title-second {
     font-size: 3rem;
   }
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .title-second {
     letter-spacing: 0.7rem;
   }
@@ -169,7 +169,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
 }
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .title-third {
     font-size: 1.8rem;
   }
@@ -180,7 +180,7 @@ body {
   letter-spacing: 0.2rem;
   font-weight: 400;
 }
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .paragraph {
     font-size: 1.5rem;
   }
@@ -210,7 +210,7 @@ body {
   margin-bottom: 21.6rem;
 }
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .btn-hide {
     display: none !important;
   }
@@ -341,7 +341,7 @@ body {
 .card:hover {
   transform: scale(1.1);
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .card:hover {
     transform: scale(0.9);
   }
@@ -353,7 +353,7 @@ body {
   -moz-perspective: 150rem;
   position: relative;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px), (hover: none) {
   .card-price {
     height: auto;
   }
@@ -371,7 +371,7 @@ body {
   border-radius: 0.5rem;
   overflow: hidden;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px), (hover: none) {
   .card-price__side {
     height: auto;
     position: relative;
@@ -380,7 +380,7 @@ body {
 .card-price__side_front {
   background: #ffffff;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px), (hover: none) {
   .card-price__side_front {
     padding-bottom: 10rem;
   }
@@ -390,7 +390,7 @@ body {
   transform: rotateY(180deg);
   background: linear-gradient(120deg, #ba8554, #a14f03);
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px), (hover: none) {
   .card-price__side_back {
     transform: rotateY(0);
     padding: 5rem;
@@ -405,7 +405,7 @@ body {
 .card-price:hover .card-price__side_front {
   transform: rotateY(-180deg);
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px), (hover: none) {
   .card-price:hover .card-price__side_front {
     transform: rotateY(0);
   }
@@ -427,7 +427,7 @@ body {
 .card-price__img_3 {
   background: #ba8554 url(../img/photo-card-price-2.png) center/cover no-repeat;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px), (hover: none) {
   .card-price__img {
     height: 23rem;
   }
@@ -442,7 +442,7 @@ body {
   top: 17rem;
   right: 0;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px), (hover: none) {
   .card-price__title {
     top: 20rem;
   }
@@ -464,7 +464,7 @@ body {
   width: 70%;
   text-align: center;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px), (hover: none) {
   .card-price__descr ul {
     width: 50%;
   }
@@ -485,7 +485,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px), (hover: none) {
   .card-price__backSide-box {
     position: relative;
     top: 0;
@@ -501,7 +501,7 @@ body {
   text-align: center;
   color: #ffffff;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px), (hover: none) {
   .card-price__text {
     margin-bottom: 2rem;
   }
@@ -524,7 +524,7 @@ body {
   transform: skewX(-20deg);
   position: relative;
 }
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .feedback-card {
     transform: skewX(-8deg);
     width: 85%;
@@ -534,7 +534,7 @@ body {
 .feedback-card > * {
   transform: skewX(20deg);
 }
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .feedback-card > * {
     transform: skewX(8deg);
     text-align: center;
@@ -549,7 +549,7 @@ body {
   margin-right: 4rem;
   overflow: hidden;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .feedback-card__img {
     float: none;
     margin: 0 auto;
@@ -609,7 +609,7 @@ body {
   overflow: hidden;
   border-radius: 0.5rem;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .booking {
     background: linear-gradient(125deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 56%, rgba(186, 133, 84, 0.800157563) 100%), url(../img/photo-booking.png) center/cover no-repeat;
   }
@@ -626,7 +626,7 @@ body {
 .form__group:nth-child(4) {
   margin-bottom: 4rem;
 }
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .form__group:not(:last-child) {
     margin-bottom: 0;
   }
@@ -645,7 +645,7 @@ body {
   border-radius: 0.3rem;
   width: 55%;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .form__input {
     width: 100%;
   }
@@ -675,7 +675,7 @@ body {
   width: 40%;
   display: inline-block;
 }
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .form__group-radio {
     display: block;
   }
@@ -683,7 +683,7 @@ body {
     margin-bottom: 2rem;
   }
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .form__group-radio {
     width: 60%;
   }
@@ -736,14 +736,14 @@ body {
 .row:not(:last-child) {
   margin-bottom: 8rem;
 }
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .row {
     max-width: 85.1rem;
   }
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .row {
-    maz-width: 60rem;
+    max-width: 60rem;
   }
 }
 
@@ -754,7 +754,7 @@ body {
 .col-1-of-3 {
   width: calc((100% - 6rem * 2) / 3);
 }
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .col-1-of-3 {
     width: calc((100% - 2rem * 2) / 3);
   }
@@ -767,7 +767,7 @@ body {
 .col-1-of-4 {
   width: calc((100% - 6rem * 3) / 4);
 }
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .col-1-of-4 {
     width: calc((100% - 2rem * 3) / 4);
   }
@@ -787,12 +787,12 @@ body {
 [class^=col-]:not(:last-child) {
   margin-right: 6rem;
 }
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   [class^=col-]:not(:last-child) {
     margin-right: 2rem;
   }
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   [class^=col-] {
     width: 90%;
     margin-right: 4rem !important;
@@ -810,7 +810,12 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
 }
-@media (max-width: 900px) {
+@media (min-resolution: 192dpi) and (min-width: 670px), (min-width: 1340px) {
+  .header {
+    background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(0, 0, 0, 0.7) 99.94%), url(../img/header_background-big.jpg) center/cover no-repeat;
+  }
+}
+@media only screen and (max-width: 900px) {
   .header {
     background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(0, 0, 0, 0.7) 99.94%), url(../img/header_background.jpg) center/cover no-repeat;
   }
@@ -830,7 +835,7 @@ body {
   width: 100%;
   text-align: center;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .header__box {
     top: 50%;
   }
@@ -854,12 +859,12 @@ body {
 .footer__item:not(:last-child) {
   margin-right: 5rem;
 }
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .footer__item:not(:last-child) {
     margin-right: 3rem;
   }
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .footer__item {
     padding: 0;
     margin: 2rem;
@@ -873,7 +878,7 @@ body {
   letter-spacing: 0.2rem;
   font-weight: 300;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .footer__link:link, .footer__link:visited {
     font-size: 1.3rem;
   }
@@ -999,7 +1004,7 @@ body {
   padding-top: 8rem;
   margin-bottom: 10rem;
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .section-about {
     margin-bottom: 40rem;
   }
@@ -1008,29 +1013,27 @@ body {
 .section-advantages {
   padding-top: 20%;
   position: relative;
-  height: 95vh;
+  min-height: 95vh;
   background: linear-gradient(90deg, rgba(186, 133, 84, 0.7) 0.03%, rgba(0, 0, 0, 0.7) 99.94%), url(../img/background-main-1.png) center/cover no-repeat;
   clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
 }
-@media (max-width: 1240px) {
+@media only screen and (max-width: 1240px) {
   .section-advantages {
-    height: 120vh;
+    min-height: 90vh;
+    padding-top: 23%;
   }
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .section-advantages {
-    height: 175vh;
-  }
-}
-@media (max-width: 900px) {
-  .section-advantages {
+    padding-top: 20%;
+    min-height: 115vh;
     clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
   }
 }
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .section-advantages {
     clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
-    height: 105vh;
+    min-height: 75vh;
   }
 }
 
@@ -1049,7 +1052,7 @@ body {
   padding: 10rem;
   background: linear-gradient(90deg, rgba(186, 133, 84, 0.7), rgba(0, 0, 0, 0.7));
 }
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .section-booking {
     padding: 4rem;
   }

@@ -1,6 +1,5 @@
 .row
     max-width: $grid-width
-    // background: #d5a8a8 test
     margin: 0 auto // top = 0, left and right = auto => center
     @include clearfix
     &:not(:last-child)
@@ -8,7 +7,7 @@
     @include respond(tab-land)
         max-width: 85.1rem
     @include respond(tab-port)
-        maz-width: 60rem
+        max-width: 60rem
 
 .col-1-of-2
     width: calc((100% - #{$gutter-horizontal}) / 2)

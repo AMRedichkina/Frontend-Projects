@@ -7,18 +7,19 @@
 .section-advantages
     padding-top: 20%
     position: relative
-    height: 95vh
+    min-height: 95vh
     background: linear-gradient(90deg, rgba($color-brown-light, 0.7) 0.03%, rgba($color-black, 0.7) 99.94%), url(../img/background-main-1.png) center / cover no-repeat
     clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%)
     @include respond(tab-land)
-        height: 120vh
+        min-height: 90vh
+        padding-top: 23%
     @include respond(tab-port)
-        height: 175vh
-    @include respond(tab-port)
+        padding-top: 20%
+        min-height: 115vh
         clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%)
     @include respond(phone)
         clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%)
-        height: 105vh
+        min-height: 75vh
 
 .section-price
     padding-top: 8rem
