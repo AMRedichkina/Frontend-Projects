@@ -1,7 +1,7 @@
 # Frontend Work Samples
 ## 1.1 Desktop Sample
 Project Preview:
-[![Project Preview](https://github.com/AMRedichkina/Frontend-work-samples/assets/Preview_first_sample.gif)]
+[![Project Preview](https://github.com/AMRedichkina/Frontend-work-samples/blob/main/assets/Preview_first_sample.gif)]
 
 This is an example of coding an animated website using:
 
