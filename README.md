@@ -1,4 +1,4 @@
-# Frontend Work Samples
+# Frontend Work Examples
 ## 1.1 Baloon Tour Site Design
 
 ![Project Preview](https://github.com/AMRedichkina/Frontend-work-samples/blob/main/assets/Preview_first_sample.gif)
