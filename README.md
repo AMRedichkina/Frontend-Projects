@@ -3,7 +3,11 @@
 
 ![Project Preview](https://github.com/AMRedichkina/Frontend-work-samples/blob/main/assets/Preview_first_sample.gif)
 
-This is an example of coding an animated website using:
+## 2. Project store game
+
+![Project Preview](https://github.com/AMRedichkina/Frontend-work-samples/blob/main/assets/Preview_second_sample.gif)
+
+This is the examples of coding the animated websites using:
 
 ![CSS](https://img.shields.io/badge/-CSS-1572B6?style=flat-square&logo=css3&logoColor=white)
 ![HTML](https://img.shields.io/badge/-HTML-E34F26?style=flat-square&logo=html5&logoColor=white)
