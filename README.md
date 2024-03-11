@@ -5,7 +5,8 @@
 
 ## 2. Project store game
 
-![Project Preview](https://github.com/AMRedichkina/Frontend-work-samples/blob/main/assets/Preview_second_sample.gif)
+![Project Preview](https://github.com/AMRedichkina/Frontend-work-samples/blob/main/assets/Previe_second_sample.gif)
+
 
 This is the examples of coding the animated websites using:
 
